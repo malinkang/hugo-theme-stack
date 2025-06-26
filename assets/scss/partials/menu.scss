@@ -218,6 +218,7 @@
     margin: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* 关键：允许子元素换行 */
     gap: 10px;
 
     svg {
