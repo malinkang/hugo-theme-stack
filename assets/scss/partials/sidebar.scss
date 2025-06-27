@@ -96,7 +96,8 @@
 
     .site-avatar {
         position: relative;
-        margin: 0;
+        margin-left:auto; //站点头像居中
+		margin-right:auto; //站点头像居中
         width: var(--sidebar-avatar-size);
         height: var(--sidebar-avatar-size);
         flex-shrink: 0;
@@ -132,6 +133,7 @@
 
     .site-name {
         color: var(--accent-color);
+        text-align:center; //站点名称居中
         margin: 0;
         font-size: 1.6rem;
 
@@ -143,6 +145,7 @@
     .site-description {
         color: var(--body-text-color);
         font-weight: normal;
+        text-align:center; //站点描述居中
         margin: 0;
         font-size: 1.4rem;
 

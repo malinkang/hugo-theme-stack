@@ -170,7 +170,7 @@
         position: relative;
         vertical-align: middle;
         padding: 0;
-
+        text-align:center; //站点描述居中
         @include respond(md) {
             width: 100%;
         }
@@ -220,11 +220,27 @@
     flex-direction: row;
     flex-wrap: wrap; /* 关键：允许子元素换行 */
     gap: 10px;
+    justify-content: center;
 
     svg {
         width: 24px;
         height: 24px;
         stroke: var(--body-text-color);
         stroke-width: 1.33;
+    }
+}
+#dark-mode-toggle {
+    display: flex; /* 确保它是一个flex容器，这样内部的图标才能居中 */
+    justify-content: center; /* 让内部的图标水平居中 */
+    align-items: center; /* 垂直居中（如果需要） */
+    width: fit-content; /* 让这个li的宽度刚好包裹其内容 */
+    max-width: 100%; /* 确保不会超出父容器 */
+    padding: 0; /* 确保没有额外的padding导致宽度过大 */
+    span {
+        display: none; /* 如果您只想显示图标，可以隐藏文字 */
+    }
+
+    svg {
+        margin: 0 5px; /* 示例：图标之间给一点间距 */
     }
 }
